@@ -10,6 +10,11 @@
     left: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #191A19;
+}
+
 .main {
     width: 100vw;
     display: flex;
@@ -63,25 +68,43 @@
     text-align: center;
 }
 
-.discord{
-
-    top: -170px;
-    left: calc(100vw - 150px);
-    margin: 10px;
+.discord::hover {
+    background-color: red;
     cursor: pointer;
 }
 
-.github{
-
-    top: -170px;
-    left: calc(100vw - 150px);
+.discord {
     margin: 10px;
+    background-color: #00000000;
+    border-color: #00000000;
     cursor: pointer;
 }
 
-.logolien {
+.lienDiscord {
+    width: 64px;
+    height: 64px;
+    top: -170px;
+    left: calc(100vw - 150px);
+}
 
-    right : 1.5vw;
+
+.github::hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.github {
+    margin: 10px;
+    background-color: #00000000;
+    border-color: #00000000;
+    cursor: pointer;
+}
+
+.lienGithub {
+    width: 64px;
+    height: 64px;
+    top: -170px;
+    left: calc(100vw - 150px);
 }
 
 .containerLeft {
