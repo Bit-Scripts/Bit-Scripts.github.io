@@ -278,6 +278,11 @@ a {
         margin-top: calc(45px - 25pt);;
         margin-left: 30px;
     }
+
+    .containerLeft, .containerRight, .imageLeft, .imageRight {
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -290,6 +295,16 @@ a {
         margin-top: calc(45px - 9pt);;
         margin-left: 50px;
     }    
+
+    .logolien {
+        text-align: center;
+    }
+
+    .containerLeft, .containerRight, .imageLeft, .imageRight {
+        text-align: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 281px) and (max-width: 320px) {
@@ -302,6 +317,12 @@ a {
         margin-top: calc(45px - 9pt);;
         margin-left: 30px;
     }    
+
+    .containerLeft, .containerRight, .imageLeft, .imageRight {
+        text-align: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 280px) {
@@ -336,6 +357,11 @@ a {
 
         width: 50px;
         height: 50px;
+    }
+
+    .containerLeft, .containerRight, .imageLeft, .imageRight {
+        text-align: center;
+        align-items: center;
     }
 
     .projects {
