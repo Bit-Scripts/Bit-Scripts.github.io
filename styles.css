@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #EEF3EF;
+    
+}
+
+.container {
+    width: 100vw;
+    height: 250px;
+    top: 0;
+    background-image: url('img/Degrade.svg');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    top: 0;
+    z-index: 5;
+    margin: 20px;
+}
+
+.header_logo {
+    display: flex;
+    text-align: center;
+
+}
+.title {
+    top: 0;
+    z-index: 10;
+    font-family: 'Press Start 2P';
+    font-size: 20pt;
+    font-weight: bold;
+    color: #191A19;
+    transform: translateY(85px);
+    width: 50px;
+}
+
+.projects {
+    top: 10px;
+    font-family: 'Golos Text';
+    font-size: 42pt;
+    align-self: center;
+    margin-top: 120px;
+    color: #191A19;
+    text-align: center;
+}
+
+.discord{
+
+    top: -170px;
+    left: calc(100vw - 150px);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.github{
+
+    top: -170px;
+    left: calc(100vw - 150px);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logolien {
+
+    right : 1.5vw;
+}
+
+.containerLeft {
+    margin-left: 2%;
+    margin-right: 28%;
+    font-family: 'Golos Text';
+    width: 70%;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px;
+    background-color: #ECEEE6;
+    border-radius: 20px;
+}
+
+.imageLeft {
+    left: 15px;
+}
+
+.textLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+.titleLeft {
+    color: #525649;
+}
+.paragraphLeft {
+    color: #525649;
+}
+
+.containerRight {
+    margin-left: 28%;
+    margin-right: 2%;
+    position: relative;
+    width: 70%;
+    font-family: 'Golos Text';
+    font-size: 20pt;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: #ECEEE6;
+    border-radius: 20px;
+}
+
+.textRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imageRight {
+    left: 15px;
+}
+.titleRight {
+    color: #525649;
+}
+.paragraphRight {
+    color: #525649;
+}
+
+.bar {
+    width: 80%;
+    height: 90px;
+    margin-bottom: 30px;
+    background-color: #DBDFCD;
+    border-radius: 50px;
+}
+
+.text {
+    font-family: 'Golos Text';
+    font-weight: lighter;
+    color: #525649;
+    opacity: 24%;
+    font-size: 25pt;
+    margin-top: calc(45px - 15pt);;
+    margin-left: 70px;
+}
+
