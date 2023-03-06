@@ -4,10 +4,14 @@
 *{
     margin: 0;
     padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .main {
-
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,7 +25,8 @@
     width: 100vw;
     height: 250px;
     top: 0;
-    background-image: url('img/Degrade.svg');
+    background-image: url('img/Degrade.svg') ;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,8 +40,8 @@
 .header_logo {
     display: flex;
     text-align: center;
-
 }
+
 .title {
     top: 0;
     z-index: 10;
@@ -161,3 +166,118 @@
     margin-left: 70px;
 }
 
+@media screen and (min-width: 425px)  and (max-width: 768px) {
+    .containerRight {
+        margin-left: 18%;
+        margin-right: 2%;
+        position: relative;
+        width: 70%;
+        font-family: 'Golos Text';
+        font-size: 20pt;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px;
+        background-color: #ECEEE6;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    *{
+        padding: 0;
+        margin: 0;
+        width: 102%;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 100vw;
+        height: 250px;
+
+        margin-right: 0;
+        top: 0;
+        background-image: url('img/Degrade.svg');
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        top: 0;
+        z-index: 10;
+        font-family: 'Press Start 2P';
+        font-size: 15pt;
+        font-weight: bold;
+        color: #191A19;
+        transform: translateY(30px);
+        width: 50px;
+    }
+
+    .header_logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        top: 0;
+    }
+
+    .projects {
+        font-size: 30pt;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .containerRight, .containerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .textLeft {
+        text-align: left;
+    }
+
+    .text {
+        font-size: 20pt;
+        margin-top: calc(45px - 11pt);;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text {
+        font-family: 'Golos Text';
+        font-weight: lighter;
+        color: #525649;
+        opacity: 24%;
+        font-size: 15pt;
+        margin-top: calc(45px - 9pt);;
+        margin-left: 50px;
+    }    
+}
+
+@media screen and (max-width: 320px) {
+    .text {
+        font-family: 'Golos Text';
+        font-weight: lighter;
+        color: #525649;
+        opacity: 24%;
+        font-size: 15pt;
+        margin-top: calc(45px - 9pt);;
+        margin-left: 30px;
+    }    
+}
