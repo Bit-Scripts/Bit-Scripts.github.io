@@ -280,7 +280,6 @@ a {
     }
 
     .containerLeft, .containerRight, .imageLeft, .imageRight {
-        text-align: center;
         align-items: center;
     }
 }
@@ -301,7 +300,6 @@ a {
     }
 
     .containerLeft, .containerRight, .imageLeft, .imageRight {
-        text-align: center;
         align-items: center;
     }
 
@@ -319,7 +317,6 @@ a {
     }    
 
     .containerLeft, .containerRight, .imageLeft, .imageRight {
-        text-align: center;
         align-items: center;
     }
 
@@ -360,7 +357,6 @@ a {
     }
 
     .containerLeft, .containerRight, .imageLeft, .imageRight {
-        text-align: center;
         align-items: center;
     }
 
@@ -395,5 +391,5 @@ a {
         margin-top: calc(45px - 25pt);;
         margin-left: 20px;
     }
-    
+   
 }
