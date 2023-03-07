@@ -121,6 +121,11 @@ a {
     border-radius: 20px;
 }
 
+.flag {
+    border: none;
+    margin-top: -35px;
+}
+
 .imageLeft {
     left: 15px;
 }
@@ -189,6 +194,30 @@ a {
     margin-left: 70px;
 }
 
+@media screen and (min-width: 768px)  and (max-width: 1024px) {
+    .containerRight {
+        margin-left: 22%;
+        margin-right: .5%;
+        position: relative;
+        width: 70%;
+        font-family: 'Golos Text';
+        font-size: 20pt;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px;
+        background-color: #ECEEE6;
+        border-radius: 20px;
+    }
+    .flag {
+        border: none;
+        width: 100px;
+        margin-top: 0;
+    }
+}
+
 @media screen and (min-width: 640px)  and (max-width: 768px) {
     .containerRight {
         margin-left: 18%;
@@ -206,6 +235,12 @@ a {
         background-color: #ECEEE6;
         border-radius: 20px;
     }
+    .flag {
+        border: none;
+        width: 100px;
+        margin-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -281,6 +316,11 @@ a {
 
     .containerLeft, .containerRight, .imageLeft, .imageRight {
         align-items: center;
+    }
+    .flag {
+        border: none;
+        width: 100px;
+        margin-top: 0;
     }
 }
 
@@ -391,5 +431,6 @@ a {
         margin-top: calc(45px - 25pt);;
         margin-left: 20px;
     }
+
    
 }
