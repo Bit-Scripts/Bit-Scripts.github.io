@@ -127,7 +127,11 @@ a {
 }
 
 .imageLeft {
-    left: 15px;
+    left: 0;
+    margin-left: 15px;
+    padding-left: 0;
+    height: 200px;
+    width: auto;
 }
 
 .textLeft {
@@ -146,7 +150,6 @@ a {
 .containerRight {
     margin-left: 28%;
     margin-right: 2%;
-    position: relative;
     width: 70%;
     font-family: 'Golos Text';
     font-size: 20pt;
@@ -167,7 +170,11 @@ a {
 }
 
 .imageRight {
-    left: 15px;
+    right: 0;
+    margin-right: 15px;
+    padding-right: 0;
+    height: 200px;
+    width: auto;
 }
 .titleRight {
     color: #525649;
