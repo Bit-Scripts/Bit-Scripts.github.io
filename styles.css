@@ -8,6 +8,7 @@
     bottom: 0;
     right: 0;
     left: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -225,7 +226,7 @@ button {
 
 .bar {
     width: 80%;
-    height: 90px;
+    height: 100px;
     margin-bottom: 30px;
     background-color: #DBDFCD;
     border-radius: 50px;
@@ -245,7 +246,7 @@ button {
     color: #525649;
     opacity: 30%;
     font-size: 25pt;
-    line-height: 90px;
+    line-height: 80px;
     padding-top: 0;
     padding-left: 30px;
 }
