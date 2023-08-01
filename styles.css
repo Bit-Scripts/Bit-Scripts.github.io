@@ -139,7 +139,8 @@ a {
 
 .flag {
     border: none;
-    margin-top: -35px;
+    margin-top: 0px;
+    margin-bottom: 35px;;
 }
 
 .imageLeft {
@@ -219,6 +220,7 @@ button {
 .bar {
     width: 80%;
     height: 90px;
+    margin-top: 30px;
     margin-bottom: 30px;
     background-color: #DBDFCD;
     border-radius: 50px;
@@ -234,7 +236,7 @@ button {
     font-weight: lighter;
     color: #525649;
     opacity: 98%;
-    font-size: 25pt;
+    font-size: 1.5em;
     line-height: 90px;
     padding-top: 0;
     padding-left: 40px;
@@ -245,15 +247,15 @@ button {
     font-weight: lighter;
     color: #525649;
     opacity: 30%;
-    font-size: 25pt;
+    font-size: 1.5em;
     line-height: 80px;
-    padding-top: 0;
+    padding-top: calc((90px - 80px) / 2);
     padding-left: 30px;
 }
 
 @media screen and (min-width: 768px)  and (max-width: 1024px) {
     body {
-        height: 100vh;
+        height: auto;
         bottom: 0;
     }
 
@@ -281,15 +283,21 @@ button {
     .flag {
         border: none;
         width: 100px;
-        margin-top: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .bar {
         width: 80%;
         height: 90px;
+        margin-top: 30px;
         margin-bottom: 30px;
+        font-family: 'Golos Text';
+        font-weight: lighter;
+        font-size: 1.2em;
         background-color: #DBDFCD;
         border-radius: 50px;
+        overflow: hidden;
     }
 
     .bar::placeholder {
@@ -297,9 +305,10 @@ button {
         font-weight: lighter;
         color: #525649;
         opacity: 30%;
-        font-size: 25pt;
-        line-height: 90px;
-        padding-top: 0;
+        height: 80px;
+        font-size: 1.2em;
+        line-height: 80px;
+        padding-top: 5px;
         padding-left: 30px;
     }
 }
@@ -328,16 +337,22 @@ button {
     }
     .flag {
         border: none;
-        width: 100px;
-        margin-top: 0;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .bar {
+        font-family: 'Golos Text';
+        font-weight: lighter;
         width: 80%;
         height: 90px;
+        font-size: 1em;
+        margin-top: 30px;
         margin-bottom: 30px;
         background-color: #DBDFCD;
         border-radius: 50px;
+        overflow: hidden;
     }
 
     .bar::placeholder {
@@ -345,10 +360,12 @@ button {
         font-weight: lighter;
         color: #525649;
         opacity: 30%;
-        font-size: 25pt;
+        height: 90px;
+        font-size: 1em;
         line-height: 90px;
         padding-top: 0;
         padding-left: 30px;
+        overflow: hidden;
     }
 }
 
@@ -441,6 +458,7 @@ button {
         margin-bottom: 30px;
         background-color: #DBDFCD;
         border-radius: 50px;
+        overflow: hidden;
     }
 
     .bar::placeholder {
@@ -448,223 +466,31 @@ button {
         font-weight: lighter;
         color: #525649;
         opacity: 30%;
-        font-size: 25pt;
+        font-size: 1em;
         line-height: 90px;
-        padding-top: calc((90px - 40px) / 2);
-        padding-left: 30px;
+        padding-top: 0;
+        padding-left: 10px;
     }
 
 }
 @media screen and (max-width: 495px) {
     .bar {
         display: inline-table;
-        height: calc(3em + 8px);
-        width: 60%;
+        height: 80px;;
+        width: 80%;
         margin: 0;
     }
     .bar::placeholder {
         line-height: 40px;
         padding: 10px;
+        font-size: 1em;
         margin-top: 0; /*calc((90px - 80px) / 2);*/
+        padding-top: 18px;
         padding-left: 15px;
         height: 2em;
+        overflow: hidden auto;
     }
     .containerLeft, .containerRight, .project {
         width : 95%;
     }
-
-    .bar {
-        width: 80%;
-    }
 }
-
-@media screen and (max-width: 375px) {
-    
-    main {
-        width: 100%;
-    }
-    .project {
-        width: 100% !important;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .imageLeft {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        width: 80% !important;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .imageRight {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        width: 80% !important;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .container {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .containerLeft {
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .containerRight {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .text {
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        color: #525649;
-        opacity: 24%;
-        font-size: 15pt;
-        margin-top: calc(45px - 9pt);;
-        margin-left: 50px;
-    }    
-
-    .logolien {
-        text-align: center;
-    }
-
-    .discord, .github {
-        margin-left: -35px;
-    }
-
-    .containerLeft, .containerRight, .imageLeft, .imageRight {
-        align-items: center;
-    }
-
-}
-
-@media screen and (max-width: 320px) {
-    body {
-        width: 100vw;
-    }
-
-    .text {
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        color: #525649;
-        opacity: 24%;
-        font-size: 15pt;
-        margin-top: calc(45px - 9pt);;
-        margin-left: 30px;
-    }    
-
-    .containerLeft, .containerRight, .imageLeft, .imageRight {
-        align-items: center;
-        width: 100%;
-    }
-
-    .projects {
-        margin-left: -90px;
-    }
-
-    .discord, .github {
-        margin-left: 20px;
-    }
-
-    .title {
-        margin-top: 20px;
-    }
-
-}
-
-/*@media screen and (max-width: 280px) {
-    *{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-
-    }
-    body {
-        width: 100vw;
-    }
-    .container {
-        width: 100vw;
-    }
-    .title {
-        top: 0;
-        z-index: 10;
-        font-family: 'Press Start 2P';
-        font-size: 10pt;
-        font-weight: bold;
-        color: #191A19;
-        transform: translateX(19px) translateY(-18px);
-        width: 100px;
-        text-align: left;
-        overflow-x: hidden;
-    }
-
-    .header_logo {
-        flex-direction: column;
-    }
-
-    .logo {
-
-        width: 50px;
-        height: 50px;
-    }
-
-    .containerLeft, .containerRight {
-        width: 100v;
-    }
-
-    .containerLeft, .containerRight, .imageLeft, .imageRight {
-        align-items: center;
-    }
-
-    .projects {
-        top: 10px;
-        font-family: 'Golos Text';
-        font-size: 24pt;
-        align-self: center;
-        margin-top: 120px;
-        color: #191A19;
-        text-align: center;
-        margin-left: -102px;
-    }
-
-    .lienDiscord {
-        margin-left: -15px;
-        margin-right: 0;
-        width: 30px;
-        height: 30px;
-    }
-
-    .lienGithub {
-        margin-left: -15px;
-        margin-right: 0;
-        width: 30px;
-        height: 30px;
-    }
-
-    .text {
-        opacity: 24%;
-        font-size: 20pt;
-        margin-top: calc(45px - 25pt);;
-        margin-left: 20px;
-    }
-
-   
-}*/
