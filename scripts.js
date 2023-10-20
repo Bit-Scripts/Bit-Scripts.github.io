@@ -5,11 +5,11 @@ const projectParagraph = Array.from(document.getElementsByClassName("paragraph")
 
 if (area.addEventListener) {
     area.addEventListener('input', () => {
-      selector();
+        selector();
     }, false);
 } else if (area.attachEvent) {
     area.attachEvent('onpropertychange', () => {
-      selector();
+        selector();
     });   
 }
 
