@@ -1,0 +1,34 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # ou la branche sur laquelle vous travaillez
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Ajoutez des étapes pour construire votre site si nécessaire
+      # Par exemple, si vous utilisez npm :
+      #- name: Install dependencies
+      #  run: npm install
+      #- name: Build
+      #  run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Mettez à jour ce chemin vers le dossier de votre site construit si différent
+
+      - name: Utiliser le ScoreToken pour d'autres tâches
+        env:
+          SCORETOKEN: ${{ secrets.ScoreToken }}
+        run: |
+          # Utilisez $SCORETOKEN pour toute tâche qui nécessite ce token pendant la phase de construction.
+          # Par exemple, pour faire une requête API:
+          # curl -H "Authorization: token $SCORETOKEN" https://api.example.com/data
