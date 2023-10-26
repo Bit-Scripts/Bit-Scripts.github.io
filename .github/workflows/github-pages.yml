@@ -27,7 +27,7 @@ jobs:
 
       - name: Utiliser le ScoreToken pour d'autres tâches
         env:
-          SCORETOKEN: ${{ secrets.ScoreToken }}
+          SCORETOKEN: ${{ secrets.SCORETOKEN }}
         run: |
           # Utilisez $SCORETOKEN pour toute tâche qui nécessite ce token pendant la phase de construction.
           # Par exemple, pour faire une requête API:
