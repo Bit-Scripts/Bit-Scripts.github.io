@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<Head>
+    <title>Bit-Scripts</title>
+    <meta name="description" content="Le Site Web de Bit-Scripts" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/icon-32.png" />
+    <link rel="stylesheet" media="screen" type="text/css" href="styles.css"/>
+</Head>
+<main class="main">
+  <body>
+    <section class="container">
+        <div class="header_logo">
+          <img
+            class="logo"
+            src="img/Logo_Bit-Scripts.svg"
+            alt="Logo"
+            width="100"
+            height="100"
+          />
+          <p class="title">Bit-Scripts</p>
+        </div>
+        <h1 class="projects">Nos Projets</h1>
+        <div class="logolien">
+          <a class="lienDiscord" href="https://discord.gg/uAtm6aMnHR" target="_blank">
+            <img
+              class="discord"
+              src="img/logo-discord 2.svg"
+              alt="discord"
+              width="60"
+              height="60"
+            />
+          </a>
+          <a class="lienGithub"
+            href="https://github.com/orgs/Bit-Scripts/repositories"
+            target="_blank"
+          >
+            <img
+              class="github"
+              src="img/Github.svg"
+              alt="github"
+              width="60"
+              height="60"
+            />
+          </a>
+        </div>
+      </section>
+      <a id="Marv" class="project" href="https://github.com/Bit-Scripts/Marv" target="_blank">
+        <div class="containerLeft">
+          <img class="imageLeft"
+              src='img/Petit Robot.svg' alt='Logo'/>
+          <div class="textLeft">
+            <h2 class="titleLeft">Marv</h2>
+            <p class="paragraph paragraphLeft">Un bot discord en NodeJS qui utilise chatGPT et un système de synthèse et de reconnaissance vocale permettant d’intéragir avec le bot grâce à la voix.</p>
+          </div>
+        </div>
+      </a>
+      <a id="Matrix" class="project" href="https://github.com/Bit-Scripts/Matrix" target="_blank">
+        <div class="containerRight">
+          <img class="imageRight"
+            src="img/Matrix 1.png" alt='Logo'/>
+          <div class="textRight">
+            <h2 class="titleRight">Matrix</h2>
+            <p class="paragraph paragraphRight">Un projet en Python qui transforme votre caméra en Ascii Art vert, un peu comme dans Matrix</p>
+          </div>
+        </div>
+      </a>
+      <a id="LowFuel" class="project" href="https://github.com/Bit-Scripts/Low-Fuel/releases/tag/1.3" target="_blank">
+        <div class="containerLeft">
+          <img class="imageLeft"
+            src='img/Low-Fuel.svg' alt='Logo'/>
+          <div class="textLeft">
+            <h2 class="titleLeft">Low-Fuel</h2>
+            <p class="paragraph paragraphLeft">Un projet en Python avec une interface avec Kivy, l’application permet de connaître dans un certain rayon d’action autour d’une adresse, le carburant de votre choix le moins cher.</p>
+          </div>    
+        </div>
+      </a>
+      <a id="Marv Web Bot" class="project" href="https://marv-bot.fr" target="_blank">
+        <div class="containerRight">
+          <img class="imageRight"
+            src="img/Marv-Bot-online.png" alt='Logo'/>
+          <div class="textRight">
+            <h2 class="titleRight">Marv Web Bot</h2>
+            <p class="paragraph paragraphRight">Un site web qui reprend le concept de Marv mais directement sur le Web pour le rendre accessible à tout le monde.</p>
+          </div>
+        </div>
+      </a>
+      <a id="Matrix_CPP" class="project" href="https://github.com/Bit-Scripts/matrix_cpp" target="_blank">
+        <div class="containerLeft">
+          <img class="imageLeft"
+            src="img/Matrix_CPP.png" alt='Logo'/>
+          <div class="textLeft">
+            <h2 class="titleLeft">Matrix CPP</h2>
+            <p class="paragraph paragraphLeft">Le projet Python Matrix qui transforme votre caméra en Ascii Art vert, un peu comme dans Matrix, entièrement refait en c++ (uniquement pour Linux).</p>
+          </div>
+        </div>
+      </a>
+      <a id="Snake Game" class="project" href="https://github.com/Bit-Scripts/SnakeGame" target="_blank">
+        <div class="containerRight">
+          <img class="imageRight"
+            src="img/snake_screenshot.png" alt='Logo' onclick="window.open('./build/web/index.html', '_blank')" />
+          <div class="textRight">
+            <h2 class="titleRight">Snake Game</h2>
+            <p class="paragraph paragraphLeft">Snake Game est un jeu où le joueur dirige un serpent cherchant à manger des pommes. Généré avec l'IA ChatGPT d'OpenAI via le bot Discord Marv, il offre une expérience améliorée tout en restant classique.</p>
+          </div>
+        </div>
+      </a>
+      <textarea id="bar" class="bar" placeholder="Rechercher un projet..." rows="5" cols="33"></textarea>
+      <button class="flag" onclick="window.location = './index-en.html'"><img src="img/en.svg" alt="EN" width="50"/></button>
+    </body>
+  </main>
+  <script src="scripts.js"></script>
+</html>
