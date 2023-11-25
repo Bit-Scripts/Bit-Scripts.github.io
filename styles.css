@@ -15,9 +15,21 @@ body {
     bottom: 0;
 }
 
-a {
+.project {
     text-decoration: none;
-    color: #191A19;
+    color: #525649;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.author {
+    text-decoration: none;
+    color: #525649;
+    display: inline;
+    cursor: pointer;
 }
 
 .main {
@@ -44,6 +56,7 @@ a {
     top: 0;
     z-index: 5;
     margin: 20px;
+    color: #191A19
 }
 
 .header_logo {
@@ -76,6 +89,7 @@ a {
     display:flex;
     flex-direction: column;
     margin-right: 35px;
+    color: #191A19;
 }
 
 .discord::hover {
@@ -117,12 +131,6 @@ a {
     left: calc(100vw - 150px);
 }
 
-.project {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .containerLeft {
     margin-left: 2%;
     margin-right: 28%;
@@ -152,10 +160,6 @@ a {
     padding-left: 0;
     height: 200px;
     width: auto;
-}
-
-a {
-    cursor: pointer;
 }
 
 button {
@@ -407,6 +411,11 @@ button {
         color: #191A19;
         transform: translateY(30px);
         width: 50px;
+    }
+
+    .imageLeft, .imageRight {
+        margin: 0 auto; /* Centre les images horizontalement */
+        display: block; /* Assure que l'image est traitée comme un bloc */
     }
 
     .header_logo {
