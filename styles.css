@@ -1,505 +1,291 @@
+/* Styles généraux et body */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&family=Press+Start+2P&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     box-sizing: border-box;
 }
 
 body {
-    bottom: 0;
-}
-
-.project {
-    text-decoration: none;
-    color: #525649;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: auto;
-}
-
-.author {
-    text-decoration: none;
-    color: #525649;
-    display: inline;
-    cursor: pointer;
-}
-
-.main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    font-family: 'Golos Text';
     background-color: #EEF3EF;
 }
 
-.container {
-    width: 100%;
-    height: 250px;
-    top: 0;
-    background-image: url('img/Degrade.svg') ;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.logo {
-    top: 0;
-    z-index: 5;
-    margin: 20px;
-    color: #191A19
+/* Styles pour le header */
+header {
+    max-width: 100vw;
 }
 
+header.container {
+    background-image: url('img/Degrade.svg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow-y: auto; /* Ajoutez ceci pour permettre la barre de défilement verticale uniquement si nécessaire */
+}
+
+/* Styles pour le logo et le titre */
 .header_logo {
     display: flex;
-    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+h1.projects {
+    margin-top: -10px;
 }
 
 .title {
-    top: 0;
-    z-index: 10;
     font-family: 'Press Start 2P';
     font-size: 20pt;
-    font-weight: bold;
-    color: #191A19;
-    transform: translateY(85px);
-    width: 50px;
-}
-
-.projects {
-    top: 10px;
-    font-family: 'Golos Text';
-    font-size: 42pt;
-    align-self: center;
-    margin-top: 120px;
-    color: #191A19;
-    text-align: center;
-}
-
-.logolien {
-    display:flex;
-    flex-direction: column;
-    margin-right: 35px;
     color: #191A19;
 }
 
-.discord::hover {
-    background-color: red;
-    cursor: pointer;
-}
-
-.discord {
-    margin: 10px;
-    background-color: #00000000;
-    border-color: #00000000;
-    cursor: pointer;
-}
-
-.lienDiscord {
-    width: 64px;
-    height: 64px;
-    top: -170px;
-    left: calc(100vw - 150px);
-}
-
-
-.github::hover {
-    background-color: red;
-    cursor: pointer;
-}
-
-.github {
-    margin: 10px;
-    background-color: #00000000;
-    border-color: #00000000;
-    cursor: pointer;
-}
-
-.lienGithub {
-    width: 64px;
-    height: 64px;
-    top: -170px;
-    left: calc(100vw - 150px);
-}
-
-.containerLeft {
-    margin-left: 2%;
-    margin-right: 28%;
-    font-family: 'Golos Text';
-    width: 70%;
-    font-size: 20pt;
+/* Styles pour la navigation */
+nav.logolien {
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    padding: 10px;
-    background-color: #ECEEE6;
-    border-radius: 20px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.flag {
-    border: none;
-    margin-top: 0px;
-    margin-bottom: 35px;;
+/* Styles pour main et les projets */
+main.main {
+    padding: 20px;
 }
 
+/* Styles de base pour les articles */
+section.projects article {
+    max-width: 70%; /* Largeur maximale de la bulle */
+    padding: 10px 20px; /* Padding intérieur */
+    border-radius: 20px; /* Bords arrondis */
+    margin-bottom: 10px; /* Espacement entre les bulles */
+    background-color: #ECEEE6; /* Couleur de fond de la bulle */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* Ombre pour donner du relief */
+    display: flex;
+    align-items: center;
+}
+
+/* Styles pour alterner la disposition des bulles */
+section.projects article:nth-child(odd) {
+    margin-left: auto; /* Aligner à droite */
+    background-color: #ECEEE6; /* Couleur pour distinguer les bulles */
+}
+
+section.projects article:nth-child(even) {
+    margin-right: auto; /* Aligner à gauche */
+}
+
+/* Styles pour les images et textes dans les bulles */
 .imageLeft {
-    border-radius: 25px;
-    left: 0;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 0;
-    height: 200px;
+    border-radius: 15px;
+    height: 100px; /* Hauteur de l'image */
     width: auto;
-}
-
-button {
-    cursor: pointer;
-}
-
-.textLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-    width: 80vw;
-}
-.titleLeft {
-    color: #525649;
-}
-.paragraphLeft {
-    color: #525649;
-}
-
-.containerRight {
-    margin-left: 28vw;
-    margin-right: 2vw;
-    width: 70vw;
-    font-family: 'Golos Text';
-    font-size: 20pt;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px;
-    background-color: #ECEEE6;
-    border-radius: 20px;
-}
-
-.textRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    width: 80vw;
+    padding-left: 20px;
 }
 
 .imageRight {
-    border-radius: 25px;
-    right: 0;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-right: 0;
-    height: 200px;
+    border-radius: 15px;
+    height: 100px; /* Hauteur de l'image */
     width: auto;
-}
-.titleRight {
-    color: #525649;
-}
-.paragraphRight {
-    color: #525649;
+    padding-right: 20px;
 }
 
-.bar {
-    width: 80%;
-    height: 90px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #DBDFCD;
-    border-radius: 50px;
+.textLeft {
+    text-align: left;
 }
 
-.bar {
-    width: 80%;
-    height: 100px;
-    margin-bottom: 30px;
-    background-color: #DBDFCD;
-    border-radius: 50px;
-    font-family: 'Golos Text';
-    font-weight: lighter;
-    color: #525649;
-    opacity: 98%;
-    font-size: 1.5em;
-    line-height: 90px;
-    padding-top: 0;
-    padding-left: 40px;
+.textRight {
+    text-align: right;
 }
 
-.bar::placeholder {
-    font-family: 'Golos Text';
-    font-weight: lighter;
-    color: #525649;
-    opacity: 30%;
-    font-size: 1.5em;
-    line-height: 80px;
-    padding-top: calc((90px - 80px) / 2);
-    padding-left: 30px;
+
+/* Style général du footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2; /* Couleur de fond du footer */
 }
 
-@media screen and (min-width: 768px)  and (max-width: 1024px) {
-    body {
-        height: auto;
-        bottom: 0;
-    }
-
-    .containerRight {
-        margin-left: 22%;
-        margin-right: .5%;
-        position: relative;
-        width: 70%;
-        font-family: 'Golos Text';
-        font-size: 20pt;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 10px;
-        background-color: #ECEEE6;
-        border-radius: 20px;
-    }
-
-    .logolien {
-        margin-left: -50px;
-    }
-
-    .flag {
-        border: none;
-        width: 100px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .bar {
-        width: 80%;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        font-size: 1.2em;
-        background-color: #DBDFCD;
-        border-radius: 50px;
-        overflow: hidden;
-    }
-
-    .bar::placeholder {
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        color: #525649;
-        opacity: 30%;
-        height: 80px;
-        font-size: 1.2em;
-        line-height: 80px;
-        padding-top: 5px;
-        padding-left: 30px;
-    }
+/* Style de la barre de recherche */
+#bar {
+    width: 80%; /* Largeur de la barre */
+    height: 60px; /* Hauteur de la barre */
+    border: 1px solid #d1d1d1; /* Bordure subtile */
+    border-radius: 30px; /* Bords arrondis */
+    padding: 10px 20px; /* Padding intérieur */
+    font-size: 16px; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+    background-color: #fff; /* Couleur de fond */
+    outline: none; /* Supprimer l'outline au focus */
 }
 
-@media screen and (min-width: 640px)  and (max-width: 768px) {
-    body {
-        height: auto;
-        bottom: 0;
-    }
-
-    .containerRight {
-        margin-left: 18%;
-        margin-right: 2%;
-        position: relative;
-        width: 70%;
-        font-family: 'Golos Text';
-        font-size: 20pt;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 10px;
-        background-color: #ECEEE6;
-        border-radius: 20px;
-    }
-    .flag {
-        border: none;
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .bar {
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        width: 80%;
-        height: 90px;
-        font-size: 1em;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        background-color: #DBDFCD;
-        border-radius: 50px;
-        overflow: hidden;
-    }
-
-    .bar::placeholder {
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        color: #525649;
-        opacity: 30%;
-        height: 90px;
-        font-size: 1em;
-        line-height: 90px;
-        padding-top: 0;
-        padding-left: 30px;
-        overflow: hidden;
-    }
+/* Placeholder style */
+#bar::placeholder {
+    color: #999; /* Couleur du placeholder */
 }
 
+/* Style du bouton (si nécessaire) */
+button.flag {
+    margin-top: 20px;;
+    width: 120px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Style de l'icône dans le bouton */
+button.flag img {
+    width: 120px; /* Taille de l'icône */
+    height: auto;
+}
+
+/* Styles de base */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section.projects .containerRight  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.projects .containerLeft  {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.imageLeft, .imageRight {
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.textLeft {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.textRight {
+    text-align: right;
+    padding-left: 20px;
+}
+
+/* Adaptations responsive */
+/* Media Queries pour ajuster sur les petits écrans */
 @media screen and (max-width: 640px) {
-    * {
-        padding: 0;
-        margin: 0;
+    /* Styles pour le logo et le titre */
+    .header_logo {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .body {
-        width: 100vw;
-        height: auto;
-        bottom: 0;
-    }
-    .main {
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-    }
-
-    .container {
-        width: 100vw;
-        height: auto;
-        margin-right: 0;
-        top: 0;
-        background-image: url('img/Degrade.svg');
-        background-size: cover;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .logo {
+        margin-top: 2px;
+        margin-left: -55px;
+        width: 60px; 
     }
 
     .title {
-        top: 0;
-        z-index: 10;
-        font-family: 'Press Start 2P';
-        font-size: 15pt;
-        font-weight: bold;
-        color: #191A19;
-        transform: translateY(30px);
-        width: 50px;
+        font-size: 12pt;
+        margin-top: 2px;
     }
 
+    h1.projects {
+        font-size: 25px;
+        margin-right: 105px;
+        width: 55px;
+    }
+
+    /* Styles pour la navigation */
+    nav.logolien {
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 25px;
+    }
+
+    section.projects article {
+        max-width: 100%; /* Largeur plus grande sur petits écrans */
+        padding: 10px; /* Padding intérieur */
+        flex-direction: column; /* Les éléments sont empilés verticalement */
+        align-items: center; /* Centrage des éléments */
+        margin: auto; /* Aligner à gauche */
+        background-color: #ECEEE6; /* Couleur pour distinguer les bulles */
+        width: 95VW;
+        margin-top:20px;
+    }
+
+    /* Pour les images dans les projets */
     .imageLeft, .imageRight {
-        margin: 0 auto; /* Centre les images horizontalement */
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
         display: block; /* Assure que l'image est traitée comme un bloc */
     }
 
-    .header_logo {
-        display: flex;
+    /* Pour le texte dans les projets */
+    .textLeft, .textRight {
+        text-align: center; /* Texte centré */
+        margin: 10px 0; /* Marge pour espacer les éléments */
+    }
+
+    /* Adapter le container pour les petits écrans */
+    section.projects .containerLeft, section.projects .containerRight {
+        flex-direction: column; /* Les éléments sont empilés verticalement */
+        align-items: center; /* Centrage des éléments */
+        height: auto; /* Hauteur de l'image */
+        width: auto; /* Largeur de l'image */
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+/* Écrans moyens à grands (tablettes à ordinateurs de bureau) */
+@media screen and (min-width: 641px) {
+    section.projects article {
         flex-direction: row;
-        justify-content: flex-start;
-        top: 0;
-    }
-
-    .projects {
-        display: block;
-        font-size: 30pt;
-        text-align: center;
-        justify-content: center;
-        margin-left: -20%;
-        width: 100%;
-    }
-
-    .containerRight, .containerLeft {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .textLeft {
-        text-align: left;
-    }
-
-    .text {
-        font-size: 20pt;
-        margin-top: calc(45px - 25pt);;
-        margin-left: 30px;
-    }
-
-    .containerLeft, .containerRight, .imageLeft, .imageRight {
+        justify-content: start;
         align-items: center;
     }
-    .flag {
-        border: none;
-        width: 100px;
-        margin-top: 0;
+
+    .containerLeft, .containerRight {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .bar {
-        width: 80%;
-        height: 90px;
-        margin-bottom: 30px;
-        background-color: #DBDFCD;
-        border-radius: 50px;
-        overflow: hidden;
+    .textLeft, .textRight {
+        text-align: left;
+        margin-left: 20px;
     }
-
-    .bar::placeholder {
-        font-family: 'Golos Text';
-        font-weight: lighter;
-        color: #525649;
-        opacity: 30%;
-        font-size: 1em;
-        line-height: 90px;
-        padding-top: 0;
-        padding-left: 10px;
-    }
-
 }
-@media screen and (max-width: 495px) {
-    .bar {
-        display: inline-table;
-        height: 80px;;
-        width: 80%;
-        margin: 0;
+
+/* Écrans extra-larges (ordinateurs de bureau) */
+@media screen and (min-width: 1025px) {
+    header.container, main.main {
+        /* max-width: 100vw; */
+        margin: 0 auto;
     }
-    .bar::placeholder {
-        line-height: 40px;
-        padding: 10px;
-        font-size: 1em;
-        margin-top: 0; /*calc((90px - 80px) / 2);*/
-        padding-top: 18px;
-        padding-left: 15px;
-        height: 2em;
-        overflow: hidden auto;
+    .textLeft {
+        text-align: right;
     }
-    .containerLeft, .containerRight, .project {
-        width : 95%;
+    
+    .textRight {
+        text-align: left;
     }
 }
