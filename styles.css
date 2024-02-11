@@ -80,6 +80,7 @@ section.projects article:nth-child(odd) {
 
 section.projects article:nth-child(even) {
     margin-right: auto; /* Aligner à gauche */
+    background-color: #ECEEE6; /* Couleur pour distinguer les bulles */
 }
 
 /* Styles pour les images et textes dans les bulles */
@@ -88,6 +89,8 @@ section.projects article:nth-child(even) {
     height: 100px; /* Hauteur de l'image */
     width: auto;
     padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .imageRight {
@@ -95,14 +98,16 @@ section.projects article:nth-child(even) {
     height: 100px; /* Hauteur de l'image */
     width: auto;
     padding-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .textLeft {
-    text-align: left;
+    text-align: right;
 }
 
 .textRight {
-    text-align: right;
+    text-align: left;
 }
 
 
@@ -258,7 +263,13 @@ section.projects .containerLeft  {
 
 /* Écrans moyens à grands (tablettes à ordinateurs de bureau) */
 @media screen and (min-width: 641px) {
-    section.projects article {
+    section.projects article:nth-child(odd) {
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    section.projects article:nth-child(even) {
         flex-direction: row;
         justify-content: start;
         align-items: center;
