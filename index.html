@@ -1,177 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <Head>
-      <title>Bit-Scripts</title>
-      <meta name="description" content="Le Site Web de Bit-Scripts" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="img/icon-32.png" />
-      <link rel="stylesheet" media="screen" type="text/css" href="styles.css"/>
-  </Head>
-  <body>
-    <header class="container">
-      <div class="header_logo">
-        <img
-          class="logo"
-          src="img/Logo_Bit-Scripts.svg"
-          alt="Logo"
-          width="100"
-          height="100"
-        />
-        <p class="title">Bit-Scripts</p>
-      </div>
-      <h1 class="projects">Nos Projets</h1>
-      <nav class="logolien">
-        <a class="lienDiscord" href="https://discord.gg/uAtm6aMnHR" target="_blank">
-          <img
-            class="discord"
-            src="img/logo-discord 2.svg"
-            alt="discord"
-            width="60"
-            height="60"
-          />
-        </a>
-        <a class="lienGithub"
-          href="https://github.com/orgs/Bit-Scripts/repositories"
-          target="_blank"
-        >
-          <img
-            class="github"
-            src="img/Github.svg"
-            alt="github"
-            width="60"
-            height="60"
-          />
-        </a>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="projects">
-        <article>
-          <a id="Marv" class="project" href="https://github.com/Bit-Scripts/Marv" target="_blank">
-            <div class="containerLeft">
-              <img class="imageLeft illustration"
-                  src='img/Petit Robot.png' alt='Logo'/>
-              <div class="textLeft">
-                <h2 class="titleLeft">Marv</h2>
-                <p class="paragraph paragraphLeft">Un bot discord en NodeJS qui utilise chatGPT et un système de synthèse et de reconnaissance vocale permettant d’intéragir avec le bot grâce à la voix. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
+    <head>
+        <title>Bit-Scripts</title>
+        <meta name="description" content="Le Site Web de Bit-Scripts" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="img/icon-32.png" />
+        <link rel="stylesheet" media="screen" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <header class="container">
+            <div class="header_logo">
+                <img class="logo" src="img/Logo_Bit-Scripts.svg" alt="Logo de Bit-Scripts" title="Bit-Scripts Home" width="100" height="100" />
+                <p class="title">Bit-Scripts</p>
             </div>
-          </a>
-        </article>
-        <article>
-          <a id="Matrix" class="project" href="https://github.com/Bit-Scripts/Matrix" target="_blank">
-            <div class="containerRight">
-              <img class="imageRight illustration"
-                src="img/Matrix 1.png" alt='Logo'/>
-              <div class="textRight">
-                <h2 class="titleRight">Matrix</h2>
-                <p class="paragraph paragraphRight">Un projet en Python qui transforme votre caméra en Ascii Art vert, un peu comme dans Matrix. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="LowFuel" class="project" href="https://github.com/Bit-Scripts/Low-Fuel/releases/tag/1.3" target="_blank">
-            <div class="containerLeft">
-              <img class="imageLeft illustration"
-                src='img/Low-Fuel.png' alt='Logo'/>
-              <div class="textLeft">
-                <h2 class="titleLeft">Low-Fuel</h2>
-                <p class="paragraph paragraphLeft">Un projet en Python avec une interface avec Kivy, l’application permet de connaître dans un certain rayon d’action autour d’une adresse, le carburant de votre choix le moins cher. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>    
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="Marv Web Bot" class="project" href="https://marv-bot.fr" target="_blank">
-            <div class="containerRight">
-              <img class="imageRight illustration"
-                src="img/Marv-Bot-online.png" alt='Logo'/>
-              <div class="textRight">
-                <h2 class="titleRight">Marv Web Bot</h2>
-                <p class="paragraph paragraphRight">Un site web qui reprend le concept de Marv mais directement sur le Web pour le rendre accessible à tout le monde. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="Matrix_CPP" class="project" href="https://github.com/Bit-Scripts/matrix_cpp" target="_blank">
-            <div class="containerLeft">
-              <img class="imageLeft illustration"
-                src="img/Matrix_CPP.png" alt='Logo'/>
-              <div class="textLeft">
-                <h2 class="titleLeft">Matrix CPP</h2>
-                <p class="paragraph paragraphLeft">Le projet Python Matrix qui transforme votre caméra en Ascii Art vert, un peu comme dans Matrix, entièrement refait en c++ (uniquement pour Linux). <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="Snake Game" class="project" href="https://github.com/Bit-Scripts/SnakeGame" target="_blank">
-            <div class="containerRight">
-              <img class="imageRight illustration"
-                src="img/snake_screenshot.png" alt='Logo' onclick="window.open('https://jeu-du-serpent.marv-bot.fr/', '_blank')" />
-              <div class="textRight">
-                <h2 class="titleRight">Snake Game</h2>
-                <p class="paragraph paragraphRight">Snake Game est un jeu où le joueur dirige un serpent cherchant à manger des pommes. Généré avec l'IA ChatGPT d'OpenAI via le bot Discord Marv, il offre une expérience améliorée tout en restant classique. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="BitGuardian" class="project" href="https://github.com/Bit-Scripts/BitGuardian.git" target="_blank">
-            <div class="containerLeft">
-              <img class="imageLeft illustration"
-                src="img/BitGuardian.png" alt='Logo'/>
-              <div class="textLeft">
-                <h2 class="titleLeft">BitGuardian</h2>
-                <p class="paragraph paragraphLeft">BitGuardian est un bot Discord de modération qui attribue un rôle aux nouveaux membres et enregistre les messages utilisateur. Facilitant la gestion des serveurs, il améliore l'expérience utilisateur et offre un support extensible pour des fonctionnalités personnalisées. <span class="author" onclick="window.open('https://github.com/Quentin-D31', '_blank')">Développé par Red Moon</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="Rsscript" class="project" href="https://github.com/Bit-Scripts/Rsscript.git" target="_blank">
-            <div class="containerRight">
-              <img class="imageRight illustration"
-                src="img/Rsscript.png" alt='Logo'/>
-              <div class="textRight">
-                <h2 class="titleRight">Rsscript</h2>
-                <p class="paragraph paragraphRight">Rsscript est un projet open source de bot Discord qui a pour but de lire les flux RSS et de les transmettre dans un salon Discord spécifique. <span class="author" onclick="window.open('https://github.com/Quentin-D31', '_blank')">Développé par Red Moon</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a  id="Musique" class="project" href="https://github.com/Bit-Scripts/musique" target="_blank">
-            <div class="containerLeft">
-              <img class="imageLeft illustration"
-                src="img/Music_bot.png" alt='Logo' onclick="window.open('https://github.com/Bit-Scripts/musique/releases/latest', '_blank')" />
-              <div class="textLeft">
-                <h2 class="titleLeft">Musique - Le Lecteur Audio</h2>
-                <p class="paragraph paragraphLeft">Musique, le lecteur audio de BIT-SCRIPTS, supporte les formats MP3, WAVE, OGG et FLAC. Facile à utiliser et efficace, il est idéal pour gérer et apprécier votre collection musicale. Développé en Python, Musique combine performance et simplicité pour tous les amateurs de musique. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a id="MPRIS-Discord-Presence" class="project" href="https://github.com/Bit-Scripts/MPRIS-Discord-Presence" target="_blank">
-            <div class="containerRight">
-              <img class="imageRight illustration"
-                src="img/mpris-discord-presence.png" alt='Logo'/>
-              <div class="textRight">
-                <h2 class="titleRight">MPRIS Discord Presence</h2>
-                <p class="paragraph paragraphRight">MPRIS Discord Presence permet de partager le média écouté/vu depuis un système Linux, compatible avec MPRIS, sur Discord. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')">Développé par Paul</span></p>
-              </div>
-            </div>
-          </a>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <textarea id="bar" class="bar" placeholder="Rechercher un projet..." rows="5" cols="33"></textarea>
-      <button class="flag" onclick="window.location = './index-en.html'"><img src="img/fr.png" alt="EN" width="100"/></button>
-    </footer>
-  </body>
-  <script src="scripts.js"></script>
+            <h1 class="projects">Nos Projets</h1>
+            <nav class="logolien">
+                <a class="lienDiscord" href="https://discord.gg/uAtm6aMnHR" target="_blank" title="Rejoignez notre Discord">
+                    <img class="discord" src="img/logo-discord 2.svg" alt="Logo Discord" width="60" height="60" />
+                </a>
+                <a class="lienGithub" href="https://github.com/orgs/Bit-Scripts/repositories" target="_blank" title="Explorez nos projets sur GitHub">
+                    <img class="github" src="img/Github.svg" alt="Logo GitHub" width="60" height="60" />
+                </a>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="projects">
+                <article>
+                    <a id="Marv" class="project" href="https://github.com/Bit-Scripts/Marv" target="_blank" title="Cliquez pour accéder à plus d'information sur Marv">
+                        <div class="containerLeft">
+                            <img class="imageLeft illustration" src='img/Petit Robot.png' alt='Accédez aux dernières versions à jour du Marv' title="Cliquez ici pour tester Marv sur Discord" onclick="window.open('https://discord.gg/9X7Yaj8n5q', '_blank')" />
+                            <div class="textLeft">
+                                <h2 class="titleLeft">Marv</h2>
+                                <p class="paragraph paragraphLeft">Un bot <span class="author" onclick="window.open('https://discord.com/download', '_blank')" title="Télécharger Discord">Discord</span> en NodeJS qui utilise chatGPT et un système de synthèse et de reconnaissance vocale permettant d’intéragir avec le bot grâce à la voix. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="Matrix" class="project" href="https://github.com/Bit-Scripts/Matrix" target="_blank" title="Cliquez pour en savoir plus sur Matrix">
+                        <div class="containerRight">
+                          <img class="imageRight illustration" src="img/Matrix 1.png" alt="Illustration de Low-Fuel" title="Téléchargez les dernières versions à jour de Matrix" onclick="window.open('https://github.com/Bit-Scripts/Matrix/releases/latest', '_blank')"/>
+                          <div class="textRight">
+                              <h2 class="titleRight">Matrix</h2>
+                              <p class="paragraph paragraphRight">Un projet en Python qui transforme votre caméra en Ascii Art vert, un peu comme dans Matrix. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                          </div>
+                      </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="LowFuel" class="project" href="https://github.com/Bit-Scripts/Low-Fuel" target="_blank" title="Cliquez pour accéder à Low-Fuel">
+                      <div class="containerLeft">
+                          <img class="imageLeft illustration" src='img/Low-Fuel.png' alt="Illustration de Low-Fuel" title="Téléchargez les dernières versions à jour de Low-Fuel" onclick="window.open('https://github.com/Bit-Scripts/Low-Fuel/releases/latest', '_blank')"/>
+                          <div class="textLeft">
+                              <h2 class="titleLeft">Low-Fuel</h2>
+                              <p class="paragraph paragraphLeft">Un projet en Python avec une interface avec Kivy, l’application permet de connaître dans un certain rayon d’action autour d’une adresse, le carburant de votre choix le moins cher. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                          </div>    
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="Marv Web Bot" class="project" href="https://marv-bot.fr" target="_blank" title="Cliquez pour accéder à Marv Web Bot">
+                      <div class="containerRight">
+                          <img class="imageRight illustration" src="img/Marv-Bot-online.png" alt="Illustration de Marv Web Bot" title="Cliquez pour en savoir plus sur Marv Web Bot" onclick="window.open('https://marv-bot.fr', '_blank')" />
+                          <div class="textRight">
+                              <h2 class="titleRight">Marv Web Bot</h2>
+                              <p class="paragraph paragraphRight">Un site web qui reprend le concept de Marv mais directement sur le Web pour le rendre accessible à tout le monde. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                              <a href="https://github.com/Bit-Scripts/MarvWeb/" target="_blank" title="Accès pour les membres">Accès Membre GitHub</a>
+                              <br>
+                              <a href="https://marv-bot.fr" target="_blank" title="Visitez Marv Web pour un accès public">Visitez Marv Web</a>
+                          </div>
+                      </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="Matrix_CPP" class="project" href="https://github.com/Bit-Scripts/matrix_cpp" target="_blank" title="Cliquez pour en savoir plus sur Matrix CPP">
+                        <div class="containerLeft">
+                            <img class="imageLeft illustration" src="img/Matrix_CPP.png" alt='Accédez aux dernières versions à jour du Matrix CPP' title="Cliquez pour en savoir plus sur Matrix CPP" onclick="window.open('https://github.com/Bit-Scripts/matrix_cpp/', '_blank')" />
+                            <div class="textLeft">
+                                <h2 class="titleLeft">Matrix CPP</h2>
+                                <p class="paragraph paragraphLeft">Le projet Python Matrix qui transforme votre caméra en Ascii Art vert, un peu comme dans Matrix, entièrement refait en c++ (uniquement pour Linux). <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="Snake Game" class="project" href="https://github.com/Bit-Scripts/SnakeGame" target="_blank" title="Cliquez pour en savoir plus sur SnakeGame">
+                        <div class="containerRight">
+                            <img class="imageRight illustration" src="img/snake_screenshot.png" alt='Accédez aux dernières versions à jour du SnakeGame' title="Cliquez pour en savoir plus sur SnakeGame" onclick="window.open('https://jeu-du-serpent.marv-bot.fr/', '_blank')" />
+                            <div class="textRight">
+                                <h2 class="titleRight">Snake Game</h2>
+                                <p class="paragraph paragraphRight">Snake Game est un jeu où le joueur dirige un serpent cherchant à manger des pommes. Généré avec l'IA ChatGPT d'OpenAI via le bot Discord Marv, il offre une expérience améliorée tout en restant classique. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="BitGuardian" class="project" href="https://github.com/Bit-Scripts/BitGuardian.git" target="_blank" title="Cliquez pour en savoir plus sur BitGuardian">
+                        <div class="containerLeft">
+                            <img class="imageLeft illustration" src="img/BitGuardian.png" alt='Accédez aux dernières versions à jour de BitGuardian' title="Cliquez pour en savoir plus sur BitGuardian" onclick="window.open('https://github.com/Bit-Scripts/BitGuardian', '_blank')" />
+                            <div class="textLeft">
+                                <h2 class="titleLeft">BitGuardian</h2>
+                                <p class="paragraph paragraphLeft">BitGuardian est un bot Discord de modération qui attribue un rôle aux nouveaux membres et enregistre les messages utilisateur. Facilitant la gestion des serveurs, il améliore l'expérience utilisateur et offre un support extensible pour des fonctionnalités personnalisées. <span class="author" onclick="window.open('https://github.com/Quentin-D31', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Red Moon</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="Rsscript" class="project" href="https://github.com/Bit-Scripts/Rsscript.git" target="_blank" title="Cliquez pour en savoir plus sur Rsscript">
+                      <div class="containerRight">
+                          <img class="imageRight illustration" src="img/Rsscript.png" alt='Accédez aux dernières versions à jour de Rsscript' title="Cliquez pour en savoir plus sur Rsscript" onclick="window.open('https://github.com/Bit-Scripts/Rsscript', '_blank')" />
+                          <div class="textRight">
+                              <h2 class="titleRight">Rsscript</h2>
+                              <p class="paragraph paragraphRight">Rsscript est un projet open source de bot Discord qui a pour but de lire les flux RSS et de les transmettre dans un salon Discord spécifique. <span class="author" onclick="window.open('https://github.com/Quentin-D31', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Red Moon</span></p>
+                          </div>
+                      </div>
+                    </a>
+                </article>
+                <article>
+                    <a  id="Musique" class="project" href="https://github.com/Bit-Scripts/musique" target="_blank" title="Cliquez pour en savoir plus sur Musique">
+                        <div class="containerLeft">
+                            <img class="imageLeft illustration" src="img/Music_bot.png" alt='Téléchargements des dernières versions à jour de Musique' title="Téléchargez les dernières versions à jour de Musique" onclick="window.open('https://github.com/Bit-Scripts/musique/releases/latest', '_blank')" />
+                            <div class="textLeft">
+                                <h2 class="titleLeft">Musique - Le Lecteur Audio</h2>
+                                <p class="paragraph paragraphLeft">Musique, le lecteur audio de BIT-SCRIPTS, supporte les formats MP3, WAVE, OGG et FLAC. Facile à utiliser et efficace, il est idéal pour gérer et apprécier votre collection musicale. Développé en Python, Musique combine performance et simplicité pour tous les amateurs de musique. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a id="MPRIS-Discord-Presence" class="project" href="https://github.com/Bit-Scripts/MPRIS-Discord-Presence" target="_blank" title="Cliquez pour en savoir plus sur MPRIS-Discord-Presence">
+                        <div class="containerRight">
+                            <img class="imageRight illustration" src="img/mpris-discord-presence.png" alt="Écran de lancement de l'application MPRIS-Discord-Presence" title="Cliquez pour en savoir plus sur MPRIS-Discord-Presence" onclick="window.open('https://github.com/Bit-Scripts/MPRIS-Discord-Presence', '_blank')" />
+                            <div class="textRight">
+                                <h2 class="titleRight">MPRIS Discord Presence</h2>
+                                <p class="paragraph paragraphRight">MPRIS Discord Presence permet de partager le média écouté/vu depuis un système Linux, compatible avec MPRIS, sur Discord. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a  id="IPTVAPP" class="project" href="https://github.com/Bit-Scripts/APPIPTV_Freebox_et_HDHomeRun" target="_blank"  title="Cliquez pour voir le projet APPIPTV Freebox et HDHomeRun sur GitHub">
+                        <div class="containerLeft">
+                            <img class="imageLeft illustration" src="img/IPTVAPP_Lancement_Chaine.png" alt="Écran de lancement de l'application IPTVAPP" title="Cliquez pour en savoir plus sur IPTVAPP" onclick="window.open('https://github.com/Bit-Scripts/APPIPTV_Freebox_et_HDHomeRun', '_blank')" />
+                            <div class="textLeft">
+                                <h2 class="titleLeft">APPIPTV Freebox et HDHomeRun</h2>
+                                <p class="paragraph paragraphLeft">IPTVAPP est une application de streaming IPTV avec une interface utilisateur graphique basée sur PyQt6, permettant de visualiser des programmes TV via Freebox ou un HDHomeRun en direct via VLC media player. <span class="author" onclick="window.open('https://github.com/Paullux', '_blank')" title="Pour en savoir plus sur l’auteur">Développé par Paul</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <textarea id="bar" class="bar" placeholder="Rechercher un projet..." rows="5" cols="33"></textarea>
+            <button class="flag" onclick="window.location = './index-en.html'"><img src="img/fr.png" alt="Drapeau français pour changer la langue" title="Changez la langue en anglais" width="100" /></button>
+        </footer>
+      </body>
+      <script src="scripts.js"></script>
 </html>
