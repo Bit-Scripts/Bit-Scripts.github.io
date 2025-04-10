@@ -22,23 +22,24 @@
  */
 
 export const cardsData = [
-{
-  "githubRepoName": "ghibli-style-transfer",
-  "project": "Bit-Scripts",
-  "imageCover": "https://github.com/Bit-Scripts/ghibli-style-transfer/raw/main/Exemples/frame_trait%C3%A9.png",
-  "title": "Stylisation des photos/vidéos dans un style Ghibli",
-  "author": "Paul",
-  "github": "https://github.com/Bit-Scripts/ghibli-style-transfer",
-  "demo": "https://bit-scripts.github.io/",
-  "translations": [
-    {
-      "lang": "en",
-      "description": "Transform your photos or videos with a dreamy Ghibli look using AnimeGANv2 converted to ONNX. Compatible with AMD GPUs and ROCm!"
-    },
-    {
-      "lang": "fr",
-      "description": "Transforme tes vidéos ou images avec un style inspiré des films Ghibli grâce à AnimeGANv2 converti en ONNX. Compatible GPU AMD avec ROCm !"
-    },
+  {
+    "githubRepoName": "ghibli-style-transfer",
+    "project": "ghibli-style-transfer",
+    "imageCover": "frame_traité.png",
+    "title": "Stylisation des photos/vidéos dans un style Ghibli",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/ghibli-style-transfer",
+    "demo": "https://bit-scripts.github.io/",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "Transform your photos or videos with a dreamy Ghibli look using AnimeGANv2 converted to ONNX. Compatible with AMD GPUs and ROCm!"
+      },
+      {
+        "lang": "fr",
+        "description": "Transforme tes vidéos ou images avec un style inspiré des films Ghibli grâce à AnimeGANv2 converti en ONNX. Compatible GPU AMD avec ROCm !"
+      },
       {
         "lang": "es",
         "description": "Transforma tus imágenes o vídeos con un estilo Ghibli animado usando AnimeGANv2 convertido a ONNX. ¡Compatible con GPUs AMD y ROCm!"
@@ -47,7 +48,7 @@ export const cardsData = [
   },
   {
     githubRepoName: "Bit-Scripts.github.io",
-    project: "Bit-Scripts",
+    project: "portfolio",
     imageCover: "bitscriptsweb.jpeg",
     title: "Bit-Scripts Portfolio",
     author: "Eddy",
