@@ -22,12 +22,12 @@ jobs:
 
       - name: Build project
         run: npm run build
-
+      
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: production-files
-          path: ./dist
+          path: ./distt
 
   deploy:
     name: Deploy
@@ -42,8 +42,8 @@ jobs:
           name: production-files
           path: ./dist
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3.1.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          name: production-files
+          path: ./dist
