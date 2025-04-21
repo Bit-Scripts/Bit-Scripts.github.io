@@ -25,7 +25,7 @@ export const cardsData = [
   {
     "githubRepoName": "zenbot",
     "project": "zenbot",
-    "imageCover": "https://github.com/Bit-Scripts/zenbot/blob/main/image/zen-bot.png",
+    "imageCover": "zen-bot.png",
     "title": "🎧 ZenBot est un bot Discord musical qui joue des musiques relaxantes",
     "author": "Paul",
     "github": "https://github.com/Bit-Scripts/zenbot",
