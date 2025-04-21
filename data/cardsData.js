@@ -23,6 +23,30 @@
 
 export const cardsData = [
   {
+    "githubRepoName": "zenbot",
+    "project": "zenbot",
+    "imageCover": "https://github.com/Bit-Scripts/zenbot/blob/main/image/zen-bot.png",
+    "title": "🎧 ZenBot est un bot Discord musical qui joue des musiques relaxantes",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/zenbot",
+    "demo": "https://discord.gg/USRHdNTyFg",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "🎧 ZenBot is a Discord music bot that plays relaxing music to create a chill and peaceful atmosphere."
+      },
+      {
+        "lang": "fr",
+        "description": "🎧 ZenBot est un bot Discord musical qui joue des musiques relaxantes pour créer une ambiance zen et apaisante."
+      },
+      {
+        "lang": "es",
+        "description": "🎧 ZenBot es un bot de música para Discord que reproduce música relajante para crear un ambiente tranquilo y zen."
+      }
+    ]
+  },
+  {
     "githubRepoName": "ghibli-style-transfer",
     "project": "ghibli-style-transfer",
     "imageCover": "frame_traité.png",
