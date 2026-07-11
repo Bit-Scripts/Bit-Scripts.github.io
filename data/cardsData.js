@@ -23,6 +23,244 @@
 
 export const cardsData = [
   {
+    "githubRepoName": "MusicLocal-Discord-Presence",
+    "project": "musicLocalDiscordPresence",
+    "imageCover": "musiclocal.png",
+    "title": "MusicLocal Discord Presence",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/MusicLocal-Discord-Presence",
+    "demo": "",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "Share the local music you're listening to on Windows and Linux in your Discord status, regardless of the media player or platform used."
+      },
+      {
+        "lang": "fr",
+        "description": "Partagez la musique locale écoutée depuis Windows et Linux dans votre statut Discord, indépendamment du lecteur ou de la plateforme utilisée."
+      },
+      {
+        "lang": "es",
+        "description": "Comparte la música local que estás escuchando en Windows y Linux en tu estado de Discord, independientemente del reproductor o plataforma utilizada."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "midi-to-singing",
+    "project": "midiToSinging",
+    "imageCover": "midi-to-singing.webp",
+    "title": "MIDI to Singing",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/midi-to-singing",
+    "demo": "https://bit-scripts.github.io/",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "Transform your MIDI files into singing voices using lyrics files (TXT format) and RVC v2 voice models."
+      },
+      {
+        "lang": "fr",
+        "description": "Transformez vos fichiers MIDI en chant grâce à des fichiers de paroles (format TXT) et des modèles vocaux RVC v2."
+      },
+      {
+        "lang": "es",
+        "description": "Transforma tus archivos MIDI en voces cantantes usando archivos de letras (formato TXT) y modelos de voz RVC v2."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "one-day-on-earth",
+    "project": "oneDayOnEarth",
+    "imageCover": "moon_in_night.png",
+    "title": "One Day On Earth",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/one-day-on-earth",
+    "demo": "https://bit-scripts.github.io/one-day-on-earth/",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "A web page that dynamically updates based on the current weather and time of day, creating an immersive atmospheric experience."
+      },
+      {
+        "lang": "fr",
+        "description": "Une page web qui se met à jour dynamiquement en fonction de la météo actuelle et de l'heure de la journée, créant une expérience atmosphérique immersive."
+      },
+      {
+        "lang": "es",
+        "description": "Una página web que se actualiza dinámicamente según el clima actual y la hora del día, creando una experiencia atmosférica inmersiva."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "3D-Earth",
+    "project": "threeDEarth",
+    "imageCover": "3D-Earth.GIF",
+    "title": "3D Earth",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/3D-Earth",
+    "demo": "",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "A web page built with Three.js displaying Earth in 3D space with realistic textures, atmosphere, moon and animations."
+      },
+      {
+        "lang": "fr",
+        "description": "Une page web réalisée avec Three.js affichant la Terre dans l'espace en 3D avec des textures réalistes, une atmosphère, la Lune et des animations."
+      },
+      {
+        "lang": "es",
+        "description": "Una página web realizada con Three.js que muestra la Tierra en el espacio en 3D con texturas realistas, atmósfera, luna y animaciones."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "myMatrix-Web",
+    "project": "myMatrixWeb",
+    "imageCover": "myMatrix.GIF",
+    "title": "myMatrix Web",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/myMatrix-Web",
+    "demo": "",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "Matrix-style visual effects for the web browser, creating a cascade of falling characters in a retro digital rain style."
+      },
+      {
+        "lang": "fr",
+        "description": "Effets visuels façon Matrix pour navigateur web, créant une cascade de caractères en chute libre dans un style pluie numérique rétro."
+      },
+      {
+        "lang": "es",
+        "description": "Efectos visuales al estilo Matrix para el navegador web, creando una cascada de caracteres en caída libre en un estilo lluvia digital retro."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "PDF-Equilibrist",
+    "project": "pdfEquilibrist",
+    "imageCover": "PDF-Equilibrist-logo.png",
+    "title": "PDF-Equilibrist",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/PDF-Equilibrist",
+    "demo": "",
+    "license": "GPL-3.0",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "An open source PDF editor built with CMake and Qt, allowing you to view, edit, annotate and manage PDF documents."
+      },
+      {
+        "lang": "fr",
+        "description": "Un éditeur PDF open source développé avec CMake et Qt, permettant de visualiser, éditer, annoter et gérer des documents PDF."
+      },
+      {
+        "lang": "es",
+        "description": "Un editor de PDF de código abierto desarrollado con CMake y Qt, que permite visualizar, editar, anotar y gestionar documentos PDF."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "Guitarix-Pipewire-Configuration",
+    "project": "guitarixPipewire",
+    "imageCover": "guitarix.jpg",
+    "title": "Guitarix + PipeWire",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/Guitarix-Pipewire-Configuration",
+    "demo": "",
+    "license": "GPL-3.0",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "Configuration for Guitarix with PipeWire in JACK emulation mode for Linux guitarists, enabling low-latency guitar processing without JACK."
+      },
+      {
+        "lang": "fr",
+        "description": "Configuration de Guitarix avec PipeWire en mode émulation JACK pour les guitaristes sous Linux, permettant un traitement guitare en faible latence sans JACK."
+      },
+      {
+        "lang": "es",
+        "description": "Configuración de Guitarix con PipeWire en modo emulación JACK para guitarristas en Linux, permitiendo el procesamiento de guitarra con baja latencia sin JACK."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "matrix_cpp",
+    "project": "matrixCpp",
+    "imageCover": "matrix-cpp.png",
+    "title": "Matrix C++",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/matrix_cpp",
+    "demo": "",
+    "license": "GPL-3.0",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "C++ reimplementation of the Matrix project using Qt6 for better performance — real-time webcam capture to ASCII art rendering and virtual camera output."
+      },
+      {
+        "lang": "fr",
+        "description": "Réimplémentation en C++ du projet Matrix avec Qt6 pour de meilleures performances — capture webcam en temps réel vers un rendu ASCII art et sortie webcam virtuelle."
+      },
+      {
+        "lang": "es",
+        "description": "Reimplementación en C++ del proyecto Matrix con Qt6 para mejor rendimiento — captura de webcam en tiempo real a renderizado ASCII art y salida de webcam virtual."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "chatgpt-electron-app",
+    "project": "chatgptElectron",
+    "imageCover": "chatgpt-electron.png",
+    "title": "ChatGPT Electron App",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/chatgpt-electron-app",
+    "demo": "",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "An Electron desktop application that integrates ChatGPT directly, providing a native app experience for AI conversations on Windows and Linux."
+      },
+      {
+        "lang": "fr",
+        "description": "Une application de bureau Electron qui intègre ChatGPT directement, offrant une expérience d'application native pour des conversations IA sur Windows et Linux."
+      },
+      {
+        "lang": "es",
+        "description": "Una aplicación de escritorio Electron que integra ChatGPT directamente, ofreciendo una experiencia de aplicación nativa para conversaciones con IA en Windows y Linux."
+      }
+    ]
+  },
+  {
+    "githubRepoName": "ChatGPTPhone",
+    "project": "chatgptPhone",
+    "imageCover": "default_card_cover.jpg",
+    "title": "ChatGPT Phone",
+    "author": "Paul",
+    "github": "https://github.com/Bit-Scripts/ChatGPTPhone",
+    "demo": "",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "An Android application that brings ChatGPT to your smartphone, allowing you to have AI-powered conversations on the go."
+      },
+      {
+        "lang": "fr",
+        "description": "Une application Android qui apporte ChatGPT sur votre smartphone, vous permettant d'avoir des conversations IA en déplacement."
+      },
+      {
+        "lang": "es",
+        "description": "Una aplicación Android que lleva ChatGPT a tu smartphone, permitiéndote tener conversaciones con IA en cualquier lugar."
+      }
+    ]
+  },
+  {
     "githubRepoName": "zenbot",
     "project": "zenbot",
     "imageCover": "zen-bot.png",
