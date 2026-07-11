@@ -25,7 +25,7 @@ export const cardsData = [
   {
     "githubRepoName": "MusicLocal-Discord-Presence",
     "project": "musicLocalDiscordPresence",
-    "imageCover": "musiclocal.png",
+    "imageCover": "musiclocal-discord.png",
     "title": "MusicLocal Discord Presence",
     "author": "Paul",
     "github": "https://github.com/Bit-Scripts/MusicLocal-Discord-Presence",
