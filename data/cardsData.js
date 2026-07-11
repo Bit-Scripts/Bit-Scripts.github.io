@@ -101,7 +101,7 @@ export const cardsData = [
     "title": "3D Earth",
     "author": "Paul",
     "github": "https://github.com/Bit-Scripts/3D-Earth",
-    "demo": "",
+    "demo": "https://bit-scripts.github.io/3D-Earth/",
     "license": "MIT",
     "translations": [
       {
@@ -125,7 +125,7 @@ export const cardsData = [
     "title": "myMatrix Web",
     "author": "Paul",
     "github": "https://github.com/Bit-Scripts/myMatrix-Web",
-    "demo": "",
+    "demo": "https://bit-scripts.github.io/myMatrix-Web/",
     "license": "MIT",
     "translations": [
       {
