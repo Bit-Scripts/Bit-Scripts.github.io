@@ -494,7 +494,7 @@ export const cardsData = [
     title: "MPRIS Discord Presence",
     author: "Paul",
     github: "https://github.com/Bit-Scripts/MPRIS-Discord-Presence",
-    demo: "",
+    demo: "https://bit-scripts.github.io/index.html",
     translations: [
       {
         lang: "en",
@@ -572,7 +572,7 @@ export const cardsData = [
     title: "APPIPTV Freebox et HDHomeRun",
     author: "Paul",
     github: "https://github.com/Bit-Scripts/APPIPTV_Freebox_et_HDHomeRun",
-    demo: "",
+    demo: "https://bit-scripts.github.io/index.html",
     translations: [
       {
         lang: "en",
