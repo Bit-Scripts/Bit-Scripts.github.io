@@ -149,7 +149,7 @@ export const cardsData = [
     "title": "PDF-Equilibrist",
     "author": "Paul",
     "github": "https://github.com/Bit-Scripts/PDF-Equilibrist",
-    "demo": "",
+    "demo": "https://bit-scripts.github.io/PDF-Equilibrist/",
     "license": "GPL-3.0",
     "translations": [
       {
