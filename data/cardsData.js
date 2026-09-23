@@ -23,6 +23,30 @@
 
 export const cardsData = [
   {
+    "githubRepoName": "SocialHubDashboard",
+    "project": "socialHubDashboard",
+    "imageCover": "social-hub-dashboard.jpg",
+    "title": "Social Hub Dashboard",
+    "author": "Paul",
+    "github": "https://github.com/Paullux/SocialHubDashboard",
+    "demo": "https://social-hub.fr/",
+    "license": "MIT",
+    "translations": [
+      {
+        "lang": "en",
+        "description": "A Next.js dashboard to centralize and track your YouTube, TikTok and Instagram content — views, likes, comments and shares in one place."
+      },
+      {
+        "lang": "fr",
+        "description": "Un tableau de bord Next.js pour centraliser et suivre vos contenus YouTube, TikTok et Instagram — vues, likes, commentaires et partages au même endroit."
+      },
+      {
+        "lang": "es",
+        "description": "Un panel de control Next.js para centralizar y seguir tus contenidos de YouTube, TikTok e Instagram — vistas, likes, comentarios y compartidos en un solo lugar."
+      }
+    ]
+  },
+  {
     "githubRepoName": "MusicLocal-Discord-Presence",
     "project": "musicLocalDiscordPresence",
     "imageCover": "musiclocal-discord.png",
