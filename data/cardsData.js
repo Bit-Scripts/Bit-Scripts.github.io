@@ -178,15 +178,15 @@ export const cardsData = [
     "translations": [
       {
         "lang": "en",
-        "description": "An open source PDF editor built with CMake and Qt, allowing you to view, edit, annotate and manage PDF documents."
+        "description": "An open source PDF editor built with Python, PyQt6 and PyMuPDF, allowing you to view, edit, annotate, convert and protect PDF documents — fully local, no cloud."
       },
       {
         "lang": "fr",
-        "description": "Un éditeur PDF open source développé avec CMake et Qt, permettant de visualiser, éditer, annoter et gérer des documents PDF."
+        "description": "Un éditeur PDF open source développé en Python avec PyQt6 et PyMuPDF, permettant de visualiser, éditer, annoter, convertir et protéger vos documents PDF — entièrement en local, sans cloud."
       },
       {
         "lang": "es",
-        "description": "Un editor de PDF de código abierto desarrollado con CMake y Qt, que permite visualizar, editar, anotar y gestionar documentos PDF."
+        "description": "Un editor de PDF de código abierto desarrollado en Python con PyQt6 y PyMuPDF, que permite visualizar, editar, anotar, convertir y proteger documentos PDF — completamente local, sin nube."
       }
     ]
   },
