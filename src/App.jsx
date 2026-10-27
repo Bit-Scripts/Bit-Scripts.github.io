@@ -1,20 +1,18 @@
 import CardsWrapper from "./components/CardsWrapper";
 import Header from "./components/Header";
 import Info from "./components/Info";
-import LangageSwitcher from "./components/LangSwitcher";
 import GlobalProvider from "../context/GlobalProvider";
-import DiscordWidget from "./components/Discord";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <GlobalProvider>
-      <div className="min-h-screen overflow-x-hidden bg-neutral-800">
+      <div className="flex min-h-screen flex-col overflow-x-hidden">
         <Header />
-        <LangageSwitcher />
-        <DiscordWidget />
-        <Info />
-        <CardsWrapper />
+        <main className="mx-auto w-full max-w-6xl flex-1 px-4 sm:px-6">
+          <Info />
+          <CardsWrapper />
+        </main>
         <Footer />
       </div>
     </GlobalProvider>

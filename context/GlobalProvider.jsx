@@ -1,6 +1,15 @@
 import { createContext, useState, useEffect } from "react";
-import { fetchReposData } from "../utils/helpers";
-import { ORGNAME } from "../config/globals";
+import { fetchReposData, getRepoFullName } from "../utils/helpers";
+import { cardsData } from "../data/cardsData";
+
+// Propriétaires (orgs ou utilisateurs) des dépôts référencés par les cartes
+const REPO_OWNERS = [
+  ...new Set(
+    cardsData
+      .map((card) => getRepoFullName(card.github)?.split("/")[0])
+      .filter(Boolean),
+  ),
+];
 
 export const GlobalContext = createContext();
 
@@ -10,7 +19,7 @@ const GlobalProvider = ({ children }) => {
 
   useEffect(() => {
     if (!reposData) {
-      fetchReposData(ORGNAME)
+      fetchReposData(REPO_OWNERS)
         .then((res) => {
           if (res) {
             setReposData(res);

@@ -4,19 +4,30 @@ export const changeLanguage = (language) => {
   i18n.changeLanguage(language);
 };
 
-export const fetchReposData = async (orgName) => {
+// "https://github.com/Owner/Repo" -> "owner/repo"
+export const getRepoFullName = (githubUrl) => {
+  const match = githubUrl?.match(/github\.com\/([^/]+\/[^/#?]+)/);
+  return match ? match[1].toLowerCase() : null;
+};
+
+const fetchOwnerRepos = async (owner) => {
   try {
     const response = await fetch(
-      `https://api.github.com/orgs/${orgName}/repos`,
+      `https://api.github.com/users/${owner}/repos?per_page=100`,
     );
     if (!response.ok) {
       throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
-    const repos = await response.json();
-    return repos;
+    return await response.json();
   } catch (error) {
     console.error("Fetch error:", error);
+    return [];
   }
+};
+
+export const fetchReposData = async (owners) => {
+  const repos = await Promise.all(owners.map(fetchOwnerRepos));
+  return repos.flat();
 };
 
 export const getDicordInviteInfo = async (inviteCode) => {

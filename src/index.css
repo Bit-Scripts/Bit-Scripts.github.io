@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* "html body" pour passer devant les styles globaux injectés par Chakra */
+html body {
+  @apply bg-neutral-950 font-sans text-neutral-300 antialiased;
+  color-scheme: dark;
+}
+
+::selection {
+  @apply bg-accent text-neutral-950;
+}
