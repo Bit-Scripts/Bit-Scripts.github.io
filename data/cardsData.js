@@ -11,7 +11,7 @@
  * @property {string} imageCover - Nom du fichier image avec extension.
  * @property {string} title - Nom du projet affiché sur la carte.
  * @property {string} author - Auteur du projet affiché sur la carte.
- * @property {string} github - lien vers le repo
+ * @property {string} github - lien vers le repo (sert aussi à récupérer langage, licence et date via l'API GitHub)
  * @property {string} demo - URL de démo du projet.
  * @property {Translation[]} translations - Description du projet dans toutes les langues souhaitées. Dans le cas où vous ne fournissez qu'une langue, ce doit être l'anglais.
  */
@@ -22,6 +22,87 @@
  */
 
 export const cardsData = [
+  {
+    githubRepoName: "quillpad-backup-to-markdown",
+    project: "quillpadBackupToMarkdown",
+    imageCover: "quillpad-backup-to-markdown.jpg",
+    title: "Quillpad Backup to Markdown",
+    author: "Eddy",
+    github: "https://github.com/generalentropy/quillpad-backup-to-markdown",
+    demo: "https://quillpad-backup-to-markdown.visualartisan.fr",
+    license: "AGPL-3.0",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "Converts a Quillpad backup archive into one Markdown file per note, with notebooks kept as folders, ready for Obsidian, Logseq or Typora. Runs entirely in the browser.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Convertit une sauvegarde Quillpad en un fichier Markdown par note, en conservant les carnets sous forme de dossiers, prêts pour Obsidian, Logseq ou Typora. Tout se passe dans le navigateur.",
+      },
+      {
+        lang: "es",
+        description:
+          "Convierte una copia de seguridad de Quillpad en un archivo Markdown por nota, conservando los cuadernos como carpetas, listos para Obsidian, Logseq o Typora. Todo ocurre en el navegador.",
+      },
+    ],
+  },
+  {
+    githubRepoName: "entropy-next-blueprint",
+    project: "entropyNextBlueprint",
+    imageCover: "entropy-next-blueprint.jpg",
+    title: "Entropy Next Blueprint",
+    author: "Eddy",
+    github: "https://github.com/generalentropy/entropy-next-blueprint",
+    demo: "https://entropy-next-blueprint.netlify.app",
+    license: "MIT",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "A Next.js 16 starter with TypeScript, Tailwind 4, shadcn/ui, Prisma, React Query and Zustand, with ESLint and Prettier already configured to start a project in minutes.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Un starter Next.js 16 avec TypeScript, Tailwind 4, shadcn/ui, Prisma, React Query et Zustand, ESLint et Prettier déjà configurés pour démarrer un projet en quelques minutes.",
+      },
+      {
+        lang: "es",
+        description:
+          "Una plantilla de Next.js 16 con TypeScript, Tailwind 4, shadcn/ui, Prisma, React Query y Zustand, con ESLint y Prettier ya configurados para empezar un proyecto en minutos.",
+      },
+    ],
+  },
+  {
+    githubRepoName: "catppuccin-vibes",
+    project: "catppuccinVibes",
+    imageCover: "catppuccin-vibes.jpg",
+    title: "Catppuccin Vibes",
+    author: "Eddy",
+    github: "https://github.com/generalentropy/catppuccin-vibes",
+    demo: "",
+    license: "MIT",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "Icons and wallpapers inspired by the Catppuccin palette, in three sets: muted, vibrant and softy peachy.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Icônes et fonds d'écran inspirés de la palette Catppuccin, en trois déclinaisons : muted, vibrant et softy peachy.",
+      },
+      {
+        lang: "es",
+        description:
+          "Iconos y fondos de pantalla inspirados en la paleta Catppuccin, en tres variantes: muted, vibrant y softy peachy.",
+      },
+    ],
+  },
   {
     "githubRepoName": "SocialHubDashboard",
     "project": "socialHubDashboard",

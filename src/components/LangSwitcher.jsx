@@ -1,49 +1,35 @@
-import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { changeLanguage, normalizeLang } from "../../utils/helpers";
-import i18next from "i18next";
+
+const LANGUAGES = [
+  { code: "fr", label: "Français" },
+  { code: "en", label: "English" },
+  { code: "es", label: "Español" },
+];
 
 function LangageSwitcher() {
-  const currentLanguage = i18next.language;
-
-  const [activeLang, setActiveLang] = useState(normalizeLang(currentLanguage));
-
-  const btnStyleBase =
-    "py-2 px-6 pointer rounded-full my-2 text-xs hover:bg-accentDarker transition-colors ";
+  const { i18n } = useTranslation();
+  const activeLang = normalizeLang(i18n.resolvedLanguage ?? i18n.language);
 
   return (
-    <div className="flex justify-center pr-4 pt-2 sm:justify-end sm:pt-4">
-      <div className="flex justify-center text-white">
-        <div className="flex gap-2 sm:gap-4">
+    <div className="flex items-center gap-1 font-mono text-xs uppercase">
+      {LANGUAGES.map(({ code, label }) => {
+        const active = activeLang === code;
+        return (
           <button
-            className={`${btnStyleBase} ${activeLang === "en" ? "bg-accentDarker" : "bg-neutral-700"}`}
-            onClick={() => {
-              changeLanguage("en");
-              setActiveLang("en");
-            }}
+            key={code}
+            lang={code}
+            title={label}
+            aria-pressed={active}
+            onClick={() => changeLanguage(code)}
+            className={`rounded px-1.5 py-1 transition-colors ${
+              active ? "text-accent" : "text-neutral-400 hover:text-neutral-100"
+            }`}
           >
-            English
+            {code}
           </button>
-          <button
-            className={`${btnStyleBase} ${activeLang === "fr" ? "bg-accentDarker" : "bg-neutral-700"} `}
-            onClick={() => {
-              changeLanguage("fr");
-              setActiveLang("fr");
-            }}
-          >
-            Français
-          </button>
-
-          <button
-            className={`${btnStyleBase} ${activeLang === "es" ? "bg-accentDarker" : "bg-neutral-700"}`}
-            onClick={() => {
-              changeLanguage("es");
-              setActiveLang("es");
-            }}
-          >
-            Español
-          </button>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }

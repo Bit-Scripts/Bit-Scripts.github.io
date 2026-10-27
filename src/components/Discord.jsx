@@ -1,45 +1,50 @@
-import { MdOnlinePrediction } from "react-icons/md";
 import { Avatar, AvatarGroup } from "@chakra-ui/react";
-import { FaDiscord } from "react-icons/fa";
 import useDiscordInfo from "../../hooks/useDiscordInfo";
-import { GUILDID } from "../../config/globals";
+import { GUILDID, DISCORDINVITECODE } from "../../config/globals";
 import { useTranslation } from "react-i18next";
 
 function DiscordWidget() {
   const { t } = useTranslation();
   const { infos } = useDiscordInfo(GUILDID);
-  const membersOnline = infos?.members ?? [];
-  const presenceCount = infos?.presence_count ?? "🙈";
 
   if (!infos) return null;
 
+  const membersOnline = infos.members ?? [];
+
   return (
-    <div className="flex justify-center pt-2 sm:pt-10">
-      <div className="mx-4 flex w-full max-w-[800px] flex-wrap items-center justify-center gap-4 rounded-lg border border-accentDarker bg-neutral-900 px-6 py-2 text-neutral-300 sm:gap-6 sm:py-4">
-        <div className="flex items-center">
-          <FaDiscord size={20} className="mr-2" />
-          <span className="font-bold">Discord Bit-Scripts</span>
-        </div>
+    <a
+      href={`https://discord.com/invite/${DISCORDINVITECODE}`}
+      className="group flex items-center gap-4 self-start rounded-lg border border-white/[0.08] bg-neutral-900 py-2.5 pl-4 pr-3 transition-colors hover:border-white/20 lg:self-auto"
+    >
+      <span className="flex items-center gap-2 text-sm">
+        <span className="relative flex h-2 w-2">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-40 motion-reduce:hidden" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+        </span>
+        <span className="text-neutral-200">
+          <span className="font-mono">{infos.presence_count}</span>{" "}
+          {t("online")}
+        </span>
+      </span>
 
-        <div className="flex items-center">
-          <MdOnlinePrediction size={22} className="mr-2 align-baseline" />
-          <span className="font-bold">
-            {t("online")} : {presenceCount}
-          </span>
-        </div>
-
-        <AvatarGroup size="sm" max={7} textColor="black">
-          {membersOnline.map((member, i) => (
+      {membersOnline.length > 0 && (
+        <AvatarGroup size="xs" max={5} spacing="-0.4rem" fontSize="10px">
+          {membersOnline.map((member) => (
             <Avatar
               name={member.username}
               src={member.avatar_url}
-              key={i}
-              bg="gray.50"
+              key={member.id}
+              bg="gray.600"
+              borderColor="#171717"
             />
           ))}
         </AvatarGroup>
-      </div>
-    </div>
+      )}
+
+      <span className="text-sm text-neutral-500 transition-colors group-hover:text-neutral-200">
+        {t("join")} →
+      </span>
+    </a>
   );
 }
 

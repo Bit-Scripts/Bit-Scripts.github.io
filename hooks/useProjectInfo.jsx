@@ -1,22 +1,26 @@
 import { useMemo } from "react";
+import { getRepoFullName } from "../utils/helpers";
 
-function useProjectInfo(reposData, githubRepoName) {
-  const findProjectObjectByName = (array, name) => {
+function useProjectInfo(reposData, githubProjectUrl) {
+  const findProjectObjectByFullName = (array, fullName) => {
     if (!array) {
       // console.log("Vous devez fournir un tableau");
       return null;
     }
 
-    if (!name) {
+    if (!fullName) {
       // console.log("Vous devez fournir un élément à rechercher");
       return null;
     }
-    return array.find((item) => item.name === name);
+    return array.find((item) => item.full_name.toLowerCase() === fullName);
   };
 
   const projectInfo = useMemo(() => {
-    return findProjectObjectByName(reposData, githubRepoName);
-  }, [reposData, githubRepoName]);
+    return findProjectObjectByFullName(
+      reposData,
+      getRepoFullName(githubProjectUrl),
+    );
+  }, [reposData, githubProjectUrl]);
 
   return projectInfo;
 }

@@ -14,7 +14,12 @@ i18n
           baseline: "Software & Script Development",
           discord: "Join our Discord",
           devby: "Developed by",
-          online: "Members Online",
+          online: "online",
+          join: "Join",
+          intro: "Open source software, scripts and Discord bots.",
+          code: "Code",
+          demo: "Demo",
+          updated: "updated",
         },
       },
       fr: {
@@ -22,8 +27,13 @@ i18n
           info: "Nos projets",
           baseline: "Développement de softs & scripts",
           discord: "Rejoignez notre Discord",
-          devby: "Developpé par",
-          online: "Membres en ligne",
+          devby: "Développé par",
+          online: "en ligne",
+          join: "Rejoindre",
+          intro: "Logiciels, scripts et bots Discord open source.",
+          code: "Code",
+          demo: "Démo",
+          updated: "màj",
         },
       },
 
@@ -33,7 +43,12 @@ i18n
           baseline: "Desarrollo de software y scripts",
           discord: "Únete a nuestro Discord",
           devby: "Desarrollado por",
-          online: "Miembros en línea",
+          online: "en línea",
+          join: "Unirse",
+          intro: "Software, scripts y bots de Discord de código abierto.",
+          code: "Código",
+          demo: "Demo",
+          updated: "act.",
         },
       },
     },
@@ -65,6 +80,10 @@ function fillTranslations(cardsData) {
 }
 
 fillTranslations(cardsData);
+
+i18n.on("languageChanged", (lang) => {
+  document.documentElement.lang = lang;
+});
 // console.log("Translations injected👍");
 
 export default i18n;

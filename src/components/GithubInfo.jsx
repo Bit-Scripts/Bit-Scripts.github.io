@@ -1,33 +1,54 @@
+import { useTranslation } from "react-i18next";
 import { useGlobalContext } from "../../context/useGlobalContext";
 import useProjectInfo from "../../hooks/useProjectInfo";
 import { convertDate } from "../../utils/helpers";
 
-export function GithubInfo({ githubRepoName }) {
+// Couleurs de github/linguist
+const LANGUAGE_COLORS = {
+  JavaScript: "#f1e05a",
+  TypeScript: "#3178c6",
+  Python: "#3572A5",
+  HTML: "#e34c26",
+  CSS: "#563d7c",
+  "C++": "#f34b7d",
+  C: "#555555",
+  "C#": "#178600",
+  Shell: "#89e051",
+  Rust: "#dea584",
+  Java: "#b07219",
+  QML: "#44a51c",
+  Vue: "#41b883",
+};
+
+export function GithubInfo({ githubProjectUrl }) {
+  const { t } = useTranslation();
   const { reposData, loading } = useGlobalContext();
-  const projectInfo = useProjectInfo(reposData, githubRepoName);
+  const projectInfo = useProjectInfo(reposData, githubProjectUrl);
 
   if (loading || !projectInfo || !reposData) return null;
 
-  const baseStyle =
-    "mt-4 flex flex-col items-center rounded  px-3 py-1 text-xs font-semibold text-neutral-200";
+  const { language } = projectInfo;
+  const license = projectInfo.license?.spdx_id;
+  const items = [
+    license && license !== "NOASSERTION" ? license : null,
+    `${t("updated")} ${convertDate(projectInfo.pushed_at ?? projectInfo.updated_at)}`,
+  ].filter(Boolean);
 
   return (
-    <div className="mb-4 flex justify-center gap-4">
-      <div className={`${baseStyle} bg-slate-500`}>
-        <span className="font-bold">Last commit</span>
-        <span>{convertDate(projectInfo?.updated_at)}</span>
-      </div>
-
-      <div className={`${baseStyle} bg-slate-600`}>
-        <span className="font-bold">Language</span>
-        <span>{projectInfo?.language}</span>
-      </div>
-
-      <div className={`${baseStyle} bg-slate-700`}>
-        <span className="font-bold">Licence</span>
-        <span>{projectInfo?.license?.key ?? "N/A"}</span>
-      </div>
-    </div>
+    <ul className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-xs text-neutral-500">
+      {language && (
+        <li className="flex items-center gap-1.5 text-neutral-300">
+          <span
+            className="h-2 w-2 rounded-full"
+            style={{ backgroundColor: LANGUAGE_COLORS[language] ?? "#8b8b8b" }}
+          />
+          {language}
+        </li>
+      )}
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
   );
 }
 
