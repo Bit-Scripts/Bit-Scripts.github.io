@@ -4,8 +4,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "pnpm@11.26.0",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
